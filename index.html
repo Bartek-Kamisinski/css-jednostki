@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Units in CSS">
+		<meta name="keywords" content="html,css,units">
+		<meta name="copyright" content="Bartłomiej Kamisiński">
+		<meta name="author" content="Bartłomiej Kamisiński">
+		<meta name="generator" content="Notepad ++">
+		<meta name="robots" content="index, follow">
+		
+		<title>Jednostki CSS</title>
+		<link rel="stylesheet" href="assets/arkusz stylów.css">
+		<style>
+			li{
+			font-size: 20px;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<header>
+			<h1>Jednostki w CSS (Units)</h1>
+		</header>
+		<h2>Co to jednostki w CSS?</h2>
+		<p style="margin-left: 50px; text-align: justify;">W CSS istnieje wiele jednostek do wyrażania długości.
+		Duża część z nich przyjmuje wartość długości (np. width,margin,padding itp).
+		Jednostka długości występuje tuż po jej wartości (wartość to liczba).
+		Przykładowe jednostki to np. px,rem.</p>
+		<h2>Jednostki w CSS dzielimy na:</h2>
+		<ol>
+			<li style="font-size: 20px;">Bezwzględne<br>
+				<div style="font-size: 16px;">
+				<hr>
+				<p style="font-size: 16px;">Jednostki bezwzględne są stałe, czyli gdy przy tworzeniu strony podamy by jakaś jednostka miała np.16, to tyle będzie ona miała niezależnie od rodzaju urzadzenia na którym jest ono wyświetlane.Nie są one zalecane przy tworzeniu stron internetowych.</p>
+				<div class="lista">
+				<p class="lewo">Takie jednostki to:</p>
+					<ul>
+						<li style="font-size: 16px;" >px | (najczęściej używane),pixel to około 1/96 cala </li>
+						<li style="font-size: 16px;" >cm | centymetry</li>
+						<li style="font-size: 16px;" >mm | minimetry, 10mm to 1cm</li>
+						<li style="font-size: 16px;" >in | cal, 1cal to 2.54cm to 96px</li>
+						<li style="font-size: 16px;" >pt | (points)/punkty, 1punkt to 1/72 cala</li>
+						<li style="font-size: 16px;" >pc | picas,1pica to 12 punktów/ 1/6 cala</li>
+					</ul>
+				</div>
+				<p></p>
+				</div>
+			</li>
+			<li style="font-size: 20px;">Względne<br>
+				<div style="font-size: 16px;">
+				<hr>
+				<p style="font-size: 16x;">Jednostki względne lepiej dopasowują się do ekranu niż bezwzględne, gdyż ich długość zależy od innej jednostki (np.wielkości ekranu danego urzadzenia)</p>
+				<div class="lista">
+				<p class="lewo">Takie jednostki to z koleji:</p>
+					<ul>
+						<li style="font-size: 16px;" >em |  Jednostka ta  używana do skalowania czcionek, marginesów, paaddingów, które mają skalować się razem z tekstem (np: gdy w body ustawimy czcionkę na konkretną wartość (np. 16px) to np.w nagłówku h1 gdy damy czcionke na 2em i margines na 0.5em to przeskaluje się to względem tej czcionki w body czyli  2em na 32px i margines na 8px).
+						<li style="font-size: 16px;" >ex | (obecnie rzadko używana) Służy do definiowania rozmiarów, które skalują się proporcjonalnie do czcionki.Nie kazda czcionka będzie miała tą sama wartość np.Georgia i Verdana</li>
+						<li style="font-size: 16px;" >ch |  Jednostka ta odpowiada szerokości glifu znaku "0" (zero) w aktualnie używanej czcionce.Jest używany do np: określania szerokości kontenerów na tekst, np: width: 40ch;, aby zapewnić, że tekst nie będzie się zbyt długo rozciągał.</li>
+						<li style="font-size: 16px;" >rem |  Ta z koleji jednostka jest bazowana na rozmiarze czcionki elementu głównego ( tego którego możemy określić dla całego pliku html (domyślnie 16px))jeżeli będziemy na stronie dawać 2rem,1.5rem to po zmianie rozmiaru czcionki w html to zmieni się ona (przeskaluje) dla wszystkich elementów używających tej jednostki (rem). </li>
+						<li style="font-size: 16px;" >vw | Ta jednostka oznacza procent szerokości pola widzenia (widocznego obszaru przeglądarki). Czyli używając tej jednostki gdy będziemy zmieniać szerokość okna przeglądarki to elementy na stronie będą zmieniać swoją wielkość/położenie itp.</li>
+						<li style="font-size: 16px;" >vh | To samo co dla vw tylko dla wysokości.</li>
+						<li style="font-size: 16px;" >vmin |  Ta jednostka to jeden procent najmniejszego wymiaru obszaru widoku, czyli jest to 1% mniejszej wartości spośród aktualnej szerokości (vw) lub wysokości (vh) okna przeglądarki.</li>
+						<li style="font-size: 16px;" >vmax | Analogicznie jak dla vmin tylko to 1% maksymalnej wartości wymiaru obszaru widoku...</li>
+						<li style="font-size: 16px;" >% | Określa wartość w stosunku do innego elementu lub rozmiaru okna przeglądarki. Np.: width: 50%; oznacza 50% szerokości rodzica,</li>
+					</ul>
+				</div>
+				</div>
+			</li>
+		</ol>
+	</body>
+</html>
